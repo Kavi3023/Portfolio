@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kavi R | AI & ML Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f5f7fa;
+      color: #222;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #fff;
+      padding: 70px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.6rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.15rem;
+      max-width: 750px;
+      margin: auto;
+      opacity: 0.95;
+    }
+    section {
+      padding: 55px 20px;
+      max-width: 1050px;
+      margin: auto;
+    }
+    h2 {
+      color: #0f172a;
+      margin-bottom: 25px;
+      font-size: 1.9rem;
+    }
+    .skills span {
+      display: inline-block;
+      background: #e2e8f0;
+      padding: 9px 14px;
+      margin: 6px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 22px;
+    }
+    .project {
+      background: #ffffff;
+      padding: 22px;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .project:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+    }
+    .project h3 {
+      margin-top: 0;
+      color: #1e293b;
+    }
+    .tag {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1d4ed8;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 0.75rem;
+      margin-right: 6px;
+      margin-top: 6px;
+    }
+    footer {
+      background: #0f172a;
+      color: #fff;
+      text-align: center;
+      padding: 35px 20px;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #38bdf8;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Kavi R</h1>
+  <p>AI & Machine Learning Intern | Turning Data into Decisions</p>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <p>
+    I am an Artificial Intelligence & Data Science student with a strong interest in building practical machine learning solutions. I focus on understanding data, applying suitable algorithms, and interpreting results rather than just achieving high accuracy.
+  </p>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Python</span>
+    <span>Pandas</span>
+    <span>NumPy</span>
+    <span>Matplotlib</span>
+    <span>Seaborn</span>
+    <span>Scikit-learn</span>
+    <span>Logistic Regression</span>
+    <span>Decision Trees</span>
+    <span>EDA</span>
+    <span>Git & GitHub</span>
+  </div>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="projects-grid">
+
+    <div class="project">
+      <h3>Flight Delay Prediction</h3>
+      <p><strong>Problem:</strong> Predict whether a flight will be delayed by more than 15 minutes.</p>
+      <p>Performed data preprocessing, exploratory data analysis, feature engineering, and trained classification models.</p>
+      <p><strong>Outcome:</strong> Identified key delay factors such as departure time and airline trends.</p>
+      <div>
+        <span class="tag">Classification</span>
+        <span class="tag">EDA</span>
+        <span class="tag">Scikit-learn</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Loan Default Prediction</h3>
+      <p><strong>Problem:</strong> Identify high-risk loan applicants using historical financial data.</p>
+      <p>Built logistic regression and decision tree models and evaluated them using performance metrics.</p>
+      <p><strong>Outcome:</strong> Understood class imbalance and real-world risk modeling.</p>
+      <div>
+        <span class="tag">Logistic Regression</span>
+        <span class="tag">Finance ML</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Used Car Price Prediction</h3>
+      <p><strong>Problem:</strong> Estimate resale prices of used cars using regression techniques.</p>
+      <p>Handled missing values, performed correlation analysis, and built regression models.</p>
+      <p><strong>Outcome:</strong> Learned the impact of noisy real-world data on predictions.</p>
+      <div>
+        <span class="tag">Regression</span>
+        <span class="tag">Data Analysis</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Placement Prediction System</h3>
+      <p><strong>Problem:</strong> Predict student placement outcomes based on academic and skill-related features.</p>
+      <p>Built a logistic regression model using student performance, projects, and communication skills data.</p>
+      <p><strong>Outcome:</strong> Achieved reliable predictions and deployed a simple interactive interface.</p>
+      <div>
+        <span class="tag">Logistic Regression</span>
+        <span class="tag">Gradio</span>
+        <span class="tag">ML Deployment</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>QR-Based Attendance System</h3>
+      <p><strong>Problem:</strong> Prevent proxy attendance using QR codes and location verification.</p>
+      <p>Developed a Flask-based web application with QR generation and GPS validation.</p>
+      <p><strong>Outcome:</strong> Built a practical system combining ML concepts with real-world needs.</p>
+      <div>
+        <span class="tag">Flask</span>
+        <span class="tag">Web App</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <p>Email: kaviravi200513@gmail.com</p>
+  <p>
+    <a href="https://github.com/Kavi3023">GitHub</a> |
+    <a href="https://www.linkedin.com/in/kavi-r-86400729a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a> 
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Kavi R | AI & ML Portfolio</p>
+</footer>
+
+</body>
+</html>
+
+
